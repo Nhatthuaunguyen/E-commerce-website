@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang sản phẩm</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/price_range_style.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="bg-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 top-left">
+                    <p>Giảm giá 30% tất cả sản phẩm</p>
+                </div>
+                <div class="col-6 text-end">
+                    <p>Hotline: <span>123456789</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header class="bg-header">
+        <div class="container">
+            <div class="row">
+                <!--Logo-->
+                <div class="col-xl-3 col-lg-3 col-6 p-0 logo">
+                    <a href="index.html"><img src="image/fotter-logo.png" alt="" class="img-fluid"></a>
+                </div>
+                <!--search bar-->
+                <div class="col-xl-6 col-lg-6 search">
+                    <button id="btn-search-close">
+                        <i class="fa-solid fa-close"></i>
+                    </button>
+                    <form action="">
+                        <div class="row">
+                            <div class="col-xxl-11 col-md-10 col-9 p-0">
+                                <input type="text" placeholder="Tìm kiếm">
+                            </div>
+                            <div class="col-xxl-1 col-md-2 col-3 p-0">
+                                <button>
+                                    <i class="fa-solid fa-search"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <!--menu icon-->
+                <div class="col-xl-3 col-lg-3 col-6 menu-icon">
+                    <ul>
+                        <li>
+                            <a href="#" id="btn-search">
+                                <i class="fa-solid fa-search"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa-regular fa-heart"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="index.html">
+                                <i class="fa-regular fa-user"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="giohang.html">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="bg-nav">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <button id="btn-cat">Danh mục sản phẩm</button>
+                    <div id="category">
+                        <button id="btn-popup-close">
+                            <i class="fa-solid fa-close"></i>
+                        </button>
+                        <ul>
+                            <li><a href="sanpham.html">Nước hoa nam</a></li>
+                            <li><a href="sanpham.html">Nước hoa nữ</a></li>
+                            <li><a href="sanpham.html">Nước hoa tông trầm</a></li>
+                            <li><a href="sanpham.html">Nước hoa tông ấm</a></li>
+                            <li><a href="sanpham.html">Nước hoa bán chạy</a></li>
+                            <li><a href="sanpham.html">Nước hoa được yêu thích nhất</a></li>
+                            <li><a href="sanpham.html">Nước hoa dòng high-end</a></li>
+                            <li><a href="sanpham.html">Nước hoa dòng low-end</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-9 main-nav">
+                    <ul>
+                        <li>
+                            <a href="index.html">Trang chủ</a>
+                        </li>
+
+
+                        <li>
+                            <a href="sanpham.html">Khuyến mãi</a>
+                        </li>
+
+
+                        <li>
+                            <a href="sanpham.html">Sản phẩm</a>
+                        </li>
+
+
+                        <li>
+                            <a href="#">Tin tức</a>
+                        </li>
+
+
+                        <li>
+                            <a href="#">Liên hệ</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-breadcrumb">
+        <h1 class="page-title">Giỏ hàng</h1>
+        <ul class="breadcrumb">
+            <li class="breadcrumb-item">
+                <a href="index.html">Trang chủ</a>
+            </li>
+            <li class="breadcrumb-item active">
+                <a href="giohang.html">Giỏ hàng</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-md-2">
+                <h4>Sản phẩm</h4>
+            </div>
+            <div class="col-md-8">
+                <div class="row">
+                    <div class="col-md-6"></div>
+                    <div class="col-md-3">
+                        <h4>Giá</h4>
+                    </div>
+                    <div class="col-md-3">
+                        <h4>Số lượng</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2 text-end">
+                <h4>Thành tiền</h4>
+            </div>
+            <div class="d-flex cart-row">
+                <div class="col-md-2 cart-img">
+                    <img src="image/prdetail1-300.png" alt="">
+                </div>
+                <div class="col-md-8 ">
+                    <div class="row">
+                        <div class="col-md-6 cart-name">
+                            <h4>Nước hoa hương hoa lavender</h4>
+                            <p>Dung tích: 100ml</p>
+                            <p>Thương hiệu: Elizabeth</p>
+                        </div>
+                        <div class="col-md-3 cart-price">
+                            <p>740.000 VND</p>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="d-flex quanty">
+                                <button id="btn-minus" class="btn-qty">
+                                    <i class="fa-solid fa-minus"></i>
+                                </button>
+                                <input type="number" value="1" id="qty">
+                                <button id="btn-plus" class="btn-qty">
+                                    <i class="fa-solid fa-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 text-end">
+                    <p class="sum">740.000VND</p>
+                </div>
+            </div>
+            <div class="d-flex cart-row">
+                <div class="col-md-2 cart-img">
+                    <img src="image/prdetail2-300.png" alt="">
+                </div>
+                <div class="col-md-8 ">
+                    <div class="row">
+                        <div class="col-md-6 cart-name">
+                            <h4>Nước hoa hương hoa lavender</h4>
+                            <p>Dung tích: 100ml</p>
+                            <p>Thương hiệu: Elizabeth</p>
+                        </div>
+                        <div class="col-md-3 cart-price">
+                            <p>740.000 VND</p>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="d-flex quanty">
+                                <button id="btn-minus" class="btn-qty">
+                                    <i class="fa-solid fa-minus"></i>
+                                </button>
+                                <input type="number" value="1" id="qty">
+                                <button id="btn-plus" class="btn-qty">
+                                    <i class="fa-solid fa-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 text-end">
+                    <p class="sum">740.000VND</p>
+                </div>
+            </div>
+            <div class="d-flex cart-row">
+                <div class="col-md-2 cart-img">
+                    <img src="image/prdetail3-300.png" alt="">
+                </div>
+                <div class="col-md-8 ">
+                    <div class="row">
+                        <div class="col-md-6 cart-name">
+                            <h4>Nước hoa hương hoa lavender</h4>
+                            <p>Dung tích: 100ml</p>
+                            <p>Thương hiệu: Elizabeth</p>
+                        </div>
+                        <div class="col-md-3 cart-price">
+                            <p>740.000 VND</p>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="d-flex quanty">
+                                <button id="btn-minus" class="btn-qty">
+                                    <i class="fa-solid fa-minus"></i>
+                                </button>
+                                <input type="number" value="1" id="qty">
+                                <button id="btn-plus" class="btn-qty">
+                                    <i class="fa-solid fa-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 text-end">
+                    <p class="sum">740.000VND</p>
+                </div>
+            </div>
+            <div class="d-flex cart-row">
+                <div class="col-md-2 cart-img">
+                    <img src="image/prdetail4-300.png" alt="">
+                </div>
+                <div class="col-md-8 ">
+                    <div class="row">
+                        <div class="col-md-6 cart-name">
+                            <h4>Nước hoa hương hoa lavender</h4>
+                            <p>Dung tích: 100ml</p>
+                            <p>Thương hiệu: Elizabeth</p>
+                        </div>
+                        <div class="col-md-3 cart-price">
+                            <p>740.000 VND</p>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="d-flex quanty">
+                                <button id="btn-minus" class="btn-qty">
+                                    <i class="fa-solid fa-minus"></i>
+                                </button>
+                                <input type="number" value="1" id="qty">
+                                <button id="btn-plus" class="btn-qty">
+                                    <i class="fa-solid fa-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 text-end">
+                    <p class="sum">740.000VND</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6">
+                <button class="btn btn-info">
+                    <a href="index.html">Tiếp tục mua sắm</a></button>
+                <label for="" class="d-block mt-3">
+                    Các yêu cầu đặc biệt
+                </label>
+                <textarea name="" id=""></textarea>
+            </div>
+            <div class="col-lg-6 text-end">
+                <h3>Tổng cộng: 4.000.000 VND</h3>
+                <p>Thuế và chi phí vận chuyển sẽ được tính ở mục thanh toán</p>
+                <button class="btn btn-warning">
+                    <a href="thanhtoan.html">Thanh toán</a>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="bgfooter mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 company-info">
+                    <a href="index.html"><img src="image/fotter-logo.png" alt="" class="img-fluid"></a>                    <h5>Liên hệ với chúng tôi qua</h5>
+                    <div class="row">
+                        <div class="col-lg-1 col-2">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <div class="col-lg-11 col-10 p-0">
+                            <p>Trụ sở chính: Lorem ipsum dolor sit amet, elit.</p>
+                        </div>
+                        <div class="col-lg-1 col-2">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <div class="col-lg-11 col-10 p-0">
+                            <p>Hotline:<span> 19004449</span>- Điện thoại: <span> 02838328272</span></p>
+                        </div>
+                    </div>
+                    <h5>Nhập email của bạn để nhận thêm thông tin từ chúng tôi</h5>
+                    <form action="" class="sub-form">
+                        <div class="row">
+                            <div class="col-lg-8">
+                                <input type="text" placeholder="Nhập email">
+                            </div>
+                            <div class="col-lg-3">
+                                <button>
+                                    <i class="fa-solid fa-arrow-right-long"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="col-lg-8">
+                    <div class="row">
+
+                        <div class="col-lg-4 col-sm-6 col-md-4 about ">
+                            <h3 class="footer-title">Về chúng tôi</h3>
+                            <ul class="nav-footer">
+                                <li>
+                                    <a href="#">Giới thiệu</a>
+                                </li>
+                                <li>
+                                    <a href="#">Danh sách sản phẩm</a>
+                                </li>
+                                <li>
+                                    <a href="#">Khách hàng thân thiết</a>
+                                </li>
+                                <li>
+                                    <a href="#">Liên hệ</a>
+                                </li>
+                                <li>
+                                    <a href="#">Địa chỉ</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="col-lg-4 col-sm-6 col-md-4 about ">
+                            <h3 class="footer-title">Về chính sách</h3>
+                            <ul class="nav-footer">
+                                <li>
+                                    <a href="#">Chính sách và quy định chungu</a>
+                                </li>
+                                <li>
+                                    <a href="#">Quy định - hình thức thanh toán</a>
+                                </li>
+                                <li>
+                                    <a href="#">Chính sách vận chuyển</a>
+                                </li>
+                                <li>
+                                    <a href="#">Chính sách đổi trả hàng</a>
+                                </li>
+                                <li>
+                                    <a href="#">Hướng dẫn mua hàng</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="col-lg-4 col-md-4 follow">
+                            <h3 class="footer-title">Theo dõi chúng tôi tại</h3>
+                            <ul class="social">
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-brands fa-facebook-f"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-brands fa-tiktok"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-brands fa-instagram"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-brands fa-youtube"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-brands fa-twitter"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/owl.carousel.js"></script>
+    <script src="js/price_range_script.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang sản phẩm</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/price_range_style.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="bg-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 top-left">
+                    <p>Giảm giá 30% tất cả sản phẩm</p>
+                </div>
+                <div class="col-6 text-end">
+                    <p>Hotline: <span>123456789</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header class="bg-header">
+        <div class="container">
+            <div class="row">
+                <!--Logo-->
+                <div class="col-xl-3 col-lg-3 col-6 p-0 logo">
+                    <a href="index.html">
+                        <img src="image/fotter-logo.png" alt="" class="img-fluid">
+                    </a>
+                </div>
+                <!--search bar-->
+                <div class="col-xl-6 col-lg-6 search">
+                    <button id="btn-search-close">
+                        <i class="fa-solid fa-close"></i>
+                    </button>
+                    <form action="">
+                        <div class="row">
+                            <div class="col-xxl-11 col-md-10 col-9 p-0">
+                                <input type="text" placeholder="Tìm kiếm">
+                            </div>
+                            <div class="col-xxl-1 col-md-2 col-3 p-0">
+                                <button>
+                                    <i class="fa-solid fa-search"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <!--menu icon-->
+                <div class="col-xl-3 col-lg-3 col-6 menu-icon">
+                    <ul>
+                        <li>
+                            <a href="#" id="btn-search">
+                                <i class="fa-solid fa-search"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="giohang.html">
+                                <i class="fa-regular fa-heart"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="giohang.html">
+                                <i class="fa-regular fa-user"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="giohang.html">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="bg-nav">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <button id="btn-cat">Danh mục sản phẩm</button>
+                    <div id="category">
+                        <button id="btn-popup-close">
+                            <i class="fa-solid fa-close"></i>
+                        </button>
+                        <ul>
+                            <li><a href="sanpham.html">Nước hoa nam</a></li>
+                            <li><a href="sanpham.html">Nước hoa nữ</a></li>
+                            <li><a href="sanpham.html">Nước hoa tông trầm</a></li>
+                            <li><a href="sanpham.html">Nước hoa tông ấm</a></li>
+                            <li><a href="sanpham.html">Nước hoa bán chạy</a></li>
+                            <li><a href="sanpham.html">Nước hoa được yêu thích nhất</a></li>
+                            <li><a href="sanpham.html">Nước hoa dòng high-end</a></li>
+                            <li><a href="sanpham.html">Nước hoa dòng low-end</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-9 main-nav">
+                    <ul>
+                        <li>
+                            <a href="#">Trang chủ</a>
+                        </li>
+
+
+                        <li>
+                            <a href="sanpham.html">Khuyến mãi</a>
+                        </li>
+
+
+                        <li>
+                            <a href="sanpham.html">Sản phẩm</a>
+                        </li>
+
+
+                        <li>
+                            <a href="#">Tin tức</a>
+                        </li>
+
+
+                        <li>
+                            <a href="#">Liên hệ</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="bg-breadcrumb">
+        <h1 class="page-title">Sản phẩm</h1>
+        <ul class="breadcrumb">
+            <li class="breadcrumb-item">
+                <a href="index.html">Trang chủ</a>
+            </li>
+            <li class="breadcrumb-item active">
+                <a href="sanpham.html">Sản phẩm</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div id="sidebar">
+                <button id="btn-sidebar">Loc
+                    <i class="fa-solid fa-filter"></i>
+                </button>
+            </div>
+        
+            <div class="col-xxl-2 col-lg-3 sidebar" >
+                <div class="sidebar-item" id="sidebar">
+                    <button id="sidebar-close">
+                        <i class="fa-solid fa-x"></i>
+                    </button>
+                    <div class="sidebar-title mt-5">
+                        <h3>Thương hiệu</h3>
+                    </div>
+                    <div class="sidebar-line"></div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input">
+                        <label for="" class="form-check-label">Channel</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input">
+                        <label for="" class="form-check-label">Gucci</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input">
+                        <label for="" class="form-check-label">YSL</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input">
+                        <label for="" class="form-check-label">Jean Paul Gaultier</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input">
+                        <label for="" class="form-check-label">Guerlain</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input">
+                        <label for="" class="form-check-label">Christian Dior</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input">
+                        <label for="" class="form-check-label">Lancome</label>
+                    </div>
+
+                    <div class="sidebar-item">
+                        <h3 class="sidebar-title">Lọc theo giá</h3>
+                        <div class="sidebar-line"></div>
+                        <div class="price-range-block">
+                            <div id="slider-range" class="price-filter-range" name="rangeInput"></div>
+                            <div style="margin:30px auto">
+                                <input type="number" min=0 max="1000000" oninput="validity.valid||(value='100000');"
+                                    id="min_price" class="price-range-field" />
+                                <input type="number" min=0 max="10000000" oninput="validity.valid||(value='10000000');"
+                                    id="max_price" class="price-range-field" />
+                            </div>
+                            <button class="price-range-search" id="price-range-submit">Search</button>
+                            <div id="searchResults" class="search-results-block"></div>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-line"></div>
+                    <div class="sidebar-title mt-5">
+                        <h3>Dung tích</h3>
+                    </div>
+                    <div class="sidebar-line"></div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input">
+                        <label for="" class="form-check-label">50ml</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input">
+                        <label for="" class="form-check-label">60ml</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input">
+                        <label for="" class="form-check-label">70ml</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input">
+                        <label for="" class="form-check-label">100ml</label>
+                    </div>
+
+                    <div class="sidebar-title mt-5">
+                        <h3>Mùi hương</h3>
+                    </div>
+                    <div class="sidebar-line"></div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input">
+                        <label for="" class="form-check-label">Hoa lan</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input">
+                        <label for="" class="form-check-label">Hoa hồng</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input">
+                        <label for="" class="form-check-label">Kẹo</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input">
+                        <label for="" class="form-check-label">Gỗ</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input">
+                        <label for="" class="form-check-label">Hoa nhài</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input">
+                        <label for="" class="form-check-label">Hoa lavender</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-9">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="pr-item">
+                            <a href="sanphamchitiet.html">
+                                <img src="image/product01.png" alt="" class="w-100">
+                                <h4 class="pr-brand">Channel</h4>
+                                <h3 class="pr-name">Nước hoa hương hoa nhài</h3>
+
+                                <div class="pr-rating">
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+
+                                <div class="pr-price">
+                                    <!--<p class="old-price">6.000.000</p> -->
+                                    <p class="new-price">5.000.000</p>
+                                </div>
+
+                                <button class="btn-buynow"><a href="sanphamchitiet.html">Mua ngay</a></button>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="pr-item">
+                            <a href="sanphamchitiet.html">
+                                <img src="image/product02.png" alt="" class="w-100">
+                                <h4 class="pr-brand">Channel</h4>
+                                <h3 class="pr-name">Nước hoa hương hoa nhài</h3>
+
+                                <div class="pr-rating">
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+
+                                <div class="pr-price">
+                                    <!--<p class="old-price">6.000.000</p> -->
+                                    <p class="new-price">5.000.000</p>
+                                </div>
+
+                                <button class="btn-buynow"><a href="sanphamchitiet.html">Mua ngay</a></button>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="pr-item">
+                            <a href="sanphamchitiet.html">
+                                <img src="image/product03.png" alt="" class="w-100">
+                                <h4 class="pr-brand">Channel</h4>
+                                <h3 class="pr-name">Nước hoa hương hoa nhài</h3>
+
+                                <div class="pr-rating">
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+
+                                <div class="pr-price">
+                                    <!--<p class="old-price">6.000.000</p> -->
+                                    <p class="new-price">5.000.000</p>
+                                </div>
+
+                                <button class="btn-buynow"><a href="sanphamchitiet.html">Mua ngay</a></button>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="pr-item">
+                            <a href="sanphamchitiet.html">
+                                <img src="image/product04.png" alt="" class="w-100">
+                                <h4 class="pr-brand">Channel</h4>
+                                <h3 class="pr-name">Nước hoa hương hoa nhài</h3>
+
+                                <div class="pr-rating">
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+
+                                <div class="pr-price">
+                                    <!--<p class="old-price">6.000.000</p> -->
+                                    <p class="new-price">5.000.000</p>
+                                </div>
+
+                                <button class="btn-buynow"><a href="sanphamchitiet.html">Mua ngay</a></button>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="pr-item">
+                            <a href="sanphamchitiet.html">
+                                <img src="image/product05.png" alt="" class="w-100">
+                                <h4 class="pr-brand">Channel</h4>
+                                <h3 class="pr-name">Nước hoa hương hoa nhài</h3>
+
+                                <div class="pr-rating">
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+
+                                <div class="pr-price">
+                                    <!--<p class="old-price">6.000.000</p> -->
+                                    <p class="new-price">5.000.000</p>
+                                </div>
+
+                                <button class="btn-buynow"><a href="sanphamchitiet.html">Mua ngay</a></button>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="pr-item">
+                            <a href="sanphamchitiet.html">
+                                <img src="image/product07.png" alt="" class="w-100">
+                                <h4 class="pr-brand">Channel</h4>
+                                <h3 class="pr-name">Nước hoa hương hoa nhài</h3>
+
+                                <div class="pr-rating">
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+
+                                <div class="pr-price">
+                                    <!--<p class="old-price">6.000.000</p> -->
+                                    <p class="new-price">5.000.000</p>
+                                </div>
+
+                                <button class="btn-buynow"><a href="sanphamchitiet.html">Mua ngay</a></button>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="pr-item">
+                            <a href="sanphamchitiet.html">
+                                <img src="image/product08.png" alt="" class="w-100">
+                                <h4 class="pr-brand">Channel</h4>
+                                <h3 class="pr-name">Nước hoa hương hoa nhài</h3>
+
+                                <div class="pr-rating">
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+
+                                <div class="pr-price">
+                                    <!--<p class="old-price">6.000.000</p> -->
+                                    <p class="new-price">5.000.000</p>
+                                </div>
+
+                                <button class="btn-buynow"><a href="sanphamchitiet.html">Mua ngay</a></button>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="pr-item">
+                            <a href="sanphamchitiet.html">
+                                <img src="image/product02.png" alt="" class="w-100">
+                                <h4 class="pr-brand">Channel</h4>
+                                <h3 class="pr-name">Nước hoa hương hoa nhài</h3>
+
+                                <div class="pr-rating">
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+
+                                <div class="pr-price">
+                                    <!--<p class="old-price">6.000.000</p> -->
+                                    <p class="new-price">5.000.000</p>
+                                </div>
+
+                                <button class="btn-buynow"><a href="sanphamchitiet.html">Mua ngay</a></button>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="pr-item">
+                            <a href="sanphamchitiet.html">
+                                <img src="image/product01.png" alt="" class="w-100">
+                                <h4 class="pr-brand">Channel</h4>
+                                <h3 class="pr-name">Nước hoa hương hoa nhài</h3>
+
+                                <div class="pr-rating">
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+
+                                <div class="pr-price">
+                                    <!--<p class="old-price">6.000.000</p> -->
+                                    <p class="new-price">5.000.000</p>
+                                </div>
+
+                                <button class="btn-buynow"><a href="sanphamchitiet.html">Mua ngay</a></button>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="pr-item">
+                            <a href="sanphamchitiet.html">
+                                <img src="image/product04.png" alt="" class="w-100">
+                                <h4 class="pr-brand">Channel</h4>
+                                <h3 class="pr-name">Nước hoa hương hoa nhài</h3>
+
+                                <div class="pr-rating">
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+
+                                <div class="pr-price">
+                                    <!--<p class="old-price">6.000.000</p> -->
+                                    <p class="new-price">5.000.000</p>
+                                </div>
+
+                                <button class="btn-buynow"><a href="sanphamchitiet.html">Mua ngay</a></button>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="pr-item">
+                            <a href="sanphamchitiet.html">
+                                <img src="image/product05.png" alt="" class="w-100">
+                                <h4 class="pr-brand">Channel</h4>
+                                <h3 class="pr-name">Nước hoa hương hoa nhài</h3>
+
+                                <div class="pr-rating">
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+
+                                <div class="pr-price">
+                                    <!--<p class="old-price">6.000.000</p> -->
+                                    <p class="new-price">5.000.000</p>
+                                </div>
+
+                                <button class="btn-buynow"><a href="sanphamchitiet.html">Mua ngay</a></button>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="pr-item">
+                            <a href="sanphamchitiet.html">
+                                <img src="image/product06_grande.png" alt="" class="w-100">
+                                <h4 class="pr-brand">Channel</h4>
+                                <h3 class="pr-name">Nước hoa hương hoa nhài</h3>
+
+                                <div class="pr-rating">
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+
+                                <div class="pr-price">
+                                    <!--<p class="old-price">6.000.000</p> -->
+                                    <p class="new-price">5.000.000</p>
+                                </div>
+
+                                <button class="btn-buynow"><a href="sanphamchitiet.html">Mua ngay</a></button>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="pagenation">
+                <li>
+                    <a href="#">
+                        <i class="fa-solid fa-backward-step"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa-solid fa-caret-left"></i>
+                    </a>
+                </li>
+                <li class="active">
+                    <a href="sanpham.html">1</a>
+                </li>
+                <li>
+                    <a href="sanpham.html">2</a>
+                </li>
+                <li>
+                    <a href="sanpham.html">3</a>
+                </li>
+                <li>
+                    <a href="sanpham.html">4</a>
+                </li>
+                <li>
+                    <a href="sanpham.html">5</a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa-solid fa-caret-right"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa-solid fa-forward-step"></i>
+                    </a>
+                </li>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="bgfooter">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 company-info">
+                    <a href="index.html">
+                        <img src="image/fotter-logo.png" alt="" class="img-fluid">
+                    </a>
+                    <h5>Liên hệ với chúng tôi qua</h5>
+                    <div class="row">
+                        <div class="col-lg-1 col-2">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <div class="col-lg-11 col-10 p-0">
+                            <p>Trụ sở chính: Lorem ipsum dolor sit amet, elit.</p>
+                        </div>
+                        <div class="col-lg-1 col-2">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <div class="col-lg-11 col-10 p-0">
+                            <p>Hotline:<span> 19004449</span>- Điện thoại: <span> 02838328272</span></p>
+                        </div>
+                    </div>
+                    <h5>Nhập email của bạn để nhận thêm thông tin từ chúng tôi</h5>
+                    <form action="" class="sub-form">
+                        <div class="row">
+                            <div class="col-lg-8">
+                                <input type="text" placeholder="Nhập email">
+                            </div>
+                            <div class="col-lg-3">
+                                <button>
+                                    <i class="fa-solid fa-arrow-right-long"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="col-lg-8">
+                    <div class="row">
+
+                        <div class="col-lg-4 col-sm-6 col-md-4 about ">
+                            <h3 class="footer-title">Về chúng tôi</h3>
+                            <ul class="nav-footer">
+                                <li>
+                                    <a href="#">Giới thiệu</a>
+                                </li>
+                                <li>
+                                    <a href="#">Danh sách sản phẩm</a>
+                                </li>
+                                <li>
+                                    <a href="#">Khách hàng thân thiết</a>
+                                </li>
+                                <li>
+                                    <a href="#">Liên hệ</a>
+                                </li>
+                                <li>
+                                    <a href="#">Địa chỉ</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="col-lg-4 col-sm-6 col-md-4 about ">
+                            <h3 class="footer-title">Về chính sách</h3>
+                            <ul class="nav-footer">
+                                <li>
+                                    <a href="#">Chính sách và quy định chungu</a>
+                                </li>
+                                <li>
+                                    <a href="#">Quy định - hình thức thanh toán</a>
+                                </li>
+                                <li>
+                                    <a href="#">Chính sách vận chuyển</a>
+                                </li>
+                                <li>
+                                    <a href="#">Chính sách đổi trả hàng</a>
+                                </li>
+                                <li>
+                                    <a href="#">Hướng dẫn mua hàng</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="col-lg-4 col-md-4 follow">
+                            <h3 class="footer-title">Theo dõi chúng tôi tại</h3>
+                            <ul class="social">
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-brands fa-facebook-f"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-brands fa-tiktok"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-brands fa-instagram"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-brands fa-youtube"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-brands fa-twitter"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/owl.carousel.js"></script>
+    <script src="js/price_range_script.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

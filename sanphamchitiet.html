@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang sản phẩm</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/price_range_style.css">
+    <link rel="stylesheet" href="css/example.css">
+    <link rel="stylesheet" href="css/easyzoom.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="bg-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 top-left">
+                    <p>Giảm giá 30% tất cả sản phẩm</p>
+                </div>
+                <div class="col-6 text-end">
+                    <p>Hotline: <span>123456789</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header class="bg-header">
+        <div class="container">
+            <div class="row">
+                <!--Logo-->
+                <div class="col-xl-3 col-lg-3 col-6 p-0 logo">
+                    <a href="index.html">
+                        <img src="image/fotter-logo.png" alt="" class="img-fluid">
+                    </a>                </div>
+                <!--search bar-->
+                <div class="col-xl-6 col-lg-6 search">
+                    <button id="btn-search-close">
+                        <i class="fa-solid fa-close"></i>
+                    </button>
+                    <form action="">
+                        <div class="row">
+                            <div class="col-xxl-11 col-md-10 col-9 p-0">
+                                <input type="text" placeholder="Tìm kiếm">
+                            </div>
+                            <div class="col-xxl-1 col-md-2 col-3 p-0">
+                                <button>
+                                    <i class="fa-solid fa-search"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <!--menu icon-->
+                <div class="col-xl-3 col-lg-3 col-6 menu-icon">
+                    <ul>
+                        <li>
+                            <a href="#" id="btn-search">
+                                <i class="fa-solid fa-search"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa-regular fa-heart"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa-regular fa-user"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="giohang.html">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="bg-nav">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <button id="btn-cat">Danh mục sản phẩm</button>
+                    <div id="category">
+                        <button id="btn-popup-close">
+                            <i class="fa-solid fa-close"></i>
+                        </button>
+                        <ul>
+                            <li><a href="sanpham.html">Nước hoa nam</a></li>
+                            <li><a href="sanpham.html">Nước hoa nữ</a></li>
+                            <li><a href="sanpham.html">Nước hoa tông trầm</a></li>
+                            <li><a href="sanpham.html">Nước hoa tông ấm</a></li>
+                            <li><a href="sanpham.html">Nước hoa bán chạy</a></li>
+                            <li><a href="sanpham.html">Nước hoa được yêu thích nhất</a></li>
+                            <li><a href="sanpham.html">Nước hoa dòng high-end</a></li>
+                            <li><a href="sanpham.html">Nước hoa dòng low-end</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-9 main-nav">
+                    <ul>
+                        <li>
+                            <a href="index.html">Trang chủ</a>
+                        </li>
+
+
+                        <li>
+                            <a href="sanpham.html">Khuyến mãi</a>
+                        </li>
+
+
+                        <li>
+                            <a href="sanpham.html">Sản phẩm</a>
+                        </li>
+
+
+                        <li>
+                            <a href="#">Tin tức</a>
+                        </li>
+
+
+                        <li>
+                            <a href="#">Liên hệ</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-breadcrumb">
+        <h1 class="page-title">Sản phẩm chi tiết</h1>
+        <ul class="breadcrumb">
+            <li class="breadcrumb-item">
+                <a href="index.html">Trang chủ</a>
+            </li>
+            <li class="breadcrumb-item active">
+                <a href="sanphamchitiet.html">Sản phẩm chi tiết</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="container-mt-5">
+        <div class="row">
+            <div class="col-xl-5 col-lg-6 col-md-4 col-sm-12">
+                <section id="example">
+                    <div class="easyzoom easyzoom--overlay easyzoom--with-thumbnails">
+                        <a href="image/prdetail1-1000.png">
+                            <img src="image/prdetail1-600.png" alt="" />
+                        </a>
+                    </div>
+
+                    <ul class="thumbnails">
+                        <li>
+                            <a href="image/prdetail1-1000.png" data-standard="image/prdetail1-600.png">
+                                <img src="image/prdetail1-300.png" alt="" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="image/prdetail2-1000.png" data-standard="image/prdetail2-600.png">
+                                <img src="image/prdetail2-300.png" alt="" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="image/prdetail3-1000.png" data-standard="image/prdetail3-600.png">
+                                <img src="image/prdetail3-300.png" alt="" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="image/prdetail4-1000.png" data-standard="image/prdetail4-600.png">
+                                <img src="image/prdetail4-300.png" alt="" />
+                            </a>
+                        </li>
+
+                    </ul>
+            </div>
+
+            <div class="col-xl-7 col-lg-6 col-md-8 col-sm-12 pr-detail">
+                <h1 class="pr-detaili-name">Nước hoa hương hoa Cologne</h1>
+                <div class="row">
+                    <div class="col-6">
+                        <div class="pr-rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <p class="watching">
+                            <i class="fa-regular fa-eye"></i>30 people are watching now
+                        </p>
+                    </div>
+                </div>
+
+                <div class="pr-detail-countdown">
+                    <h2>Flash Deal</h2>
+                    <div class="timer" id="timer2">
+                        <div class="days"></div>
+                        <div class="hours"></div>
+                        <div class="minutes"></div>
+                        <div class="seconds"></div>
+                    </div>
+                </div>
+                <div class="pr-detail-price">
+                    <div class="old-price">1.000.000 VND</div>
+                    <div class="new-price">700.000 VND</div>
+                </div>
+                <p class="pr-detail-short-des">Bạn có từng tự hỏi Cologne là gì? Đó là một dòng nước hoa độc đáo và khác
+                    biệt, được yêu thích bởi cả nam và nữ. Với mùi hương nhẹ nhàng và tươi mát, Cologne mang đến cho bạn
+                    cảm giác tự tin và thoải mái. </p>
+                <p class="pr-detail-short-des">Chỉ cần vài giọt nước hoa cũng đủ giúp ta xua tan mọi mệt mỏi
+                    ngay cả khi đang trạng thái tồi tệ nhất. Với mùi thơm nhẹ nhàng, những tín đồ yêu “hương” chắc chắn
+                    sẽ bị em nước hoa này chinh phục triệt để. </p>
+                <h4>Đặc điểm nổi bật</h4>
+                <ul>
+                    <li>Được chế tạo bằng chất liệu thủy tinh dày màu hồng chắc chắn. chiếc nắp vuông vức phủ màu đen
+                        sang trọng. Sự kết hợp đầy thẩm mỹ, khiến cho chai nước hoa trở nên khác biệt và đầy nổi bật.
+                    </li>
+                    <li>Cả chai nước hoa hài hòa bằng màu hồng nhã nhặn, nữ tính. Cùng với tông mùi dịu dàng, dễ chịu
+                        bên trong, chai nước hoa thích hợp sử dụng đi làm hàng ngày, hay trong những buổi họp mặt cùng
+                        bạn bè.</li>
+                    <li>Hương thơm ngọt mọng của Mận rồi nhanh chóng chuyển mình sang tầng hương giữa với hoa vòi voi
+                        đang trú ngụ ngát hương và miên man, mềm mại vô cùng.</li>
+                    <li>Dù có bao nhiêu chai nước hoa đi nữa thì đối với những người đam mê mùi hương, trong bộ sưu tập
+                        ấy không thể nào thiếu được mùi hương này.</li>
+                </ul>
+                <div class="size mt-4">
+                    <h4 class="pr-detail-size">Dung tích</h4>
+                    <input type="radio" name="pr-size" id="small">
+                    <label for="small">30 ml</label>
+                    <input type="radio" name="pr-size" id="med1">
+                    <label for="med1">50 ml</label>
+                    <input type="radio" name="pr-size" id="med2">
+                    <label for="med2">70 ml</label>
+                    <input type="radio" name="pr-size" id="large">
+                    <label for="large">100 ml</label>
+                </div>
+
+                <h4>Số lượng</h4>
+                <div class="d-flex">
+                    <button id="btn-minus" class="btn-qty">
+                        <i class="fa-solid fa-minus"></i>
+                    </button>
+                    <input type="number" value="1" id="qty">
+                    <button id="btn-plus" class="btn-qty">
+                        <i class="fa-solid fa-plus"></i>
+                    </button>
+                </div>
+                <div class="d-flex pr-btn">
+                    <button class="btn btn-info"><a href="giohang.html">Thêm vào giỏ hàng</a></button>
+                    <button class="btn-buynow"><a href="thanhtoan.html">Mua ngay</a></button>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12 my-5">
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#news"
+                                type="button" role="tab" aria-controls="news" aria-selected="true">Tin tức về sản
+                                phẩm</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#review"
+                                type="button" role="tab" aria-controls="review" aria-selected="false">Đánh giá</button>
+                        </li>
+                    </ul>
+
+                    <!-- Tab panes -->
+                    <div class="tab-content pr-description">
+                        <div class="tab-pane active" id="news" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+                            <h3>Cologne là gì? Cologne có gì khác biệt so với những dòng nước hoa khác</h3>
+                            <p> Cologne là dòng nước hoa mà có nồng độ cao nhưng lại giá rẻ hơn khá nhiều, phù hợp với
+                                tài chính của nhiều người và nhất là những người yêu thích mùi hương nhẹ nhàng, tinh tế
+                            </p>
+                            <h4>Cologne là gì?</h4>
+                            <p>
+                                Đây là cái tên dành cho loại nước hoa có nguồn gốc ở Đức, nó có chứa khoảng 2 – 5% lượng
+                                tinh dầu thơm.
+                            </p>
+                            <p>
+                                Mặc dù không để lại hương thơm quá lâu trên cơ thể nhưng Cologne luôn mang lại sự thoải
+                                mái, dễ chịu nhất cho người sử dụng.
+                            </p>
+                            <div class="text-center">
+                                <img src="image/blog1.png" alt="">
+
+                            </div>
+                            <h4>Cologne có gì khác biệt so với những dòng nước hoa khác?</h4>
+                            <p>Điểm khác biệt của chúng chính là ở nồng độ tinh dầu xuất hiện trong nước hoa. Chính điều
+                                này cũng đã tạo nên đặc điểm riêng của từng loại cũng như thời gian lưu giữ lại hương
+                                thơm. Cụ thể như:</p>
+                            <p>Parfum: Đây là loại nước hoa được mệnh danh là đậm đặc nhất bởi nó chứa đến 22-40% tinh
+                                dầu thơm trong đó. Vì thế hương thơm của chúng cũng lưu lại khá lâu có thể lên đến 6h.
+                            </p>
+                            <p>Eau de parfum: Còn đây là loại nước hoa có chứa 12 – 20% tinh dầu, một con số cũng không
+                                phải là nhỏ nên mùi hương cũng lưu giữ lại trong khoảng 4 – 5h.</p>
+                            <p>
+                                Eau de Cologne: Còn với sản phẩm nước hoa mà chúng ta đang nói đến ở đây thì nó chứa
+                                khoảng 2 – 4 % tinh dầu hương và mùi hương có thể lưu lại trên cơ thể trong khoảng từ 1
+                                – 2h.
+                            </p>
+                            <p>Thật ra với mỗi dòng nước hoa khác nhau chúng đều sẽ mang lại những lợi ích và sự phù hợp
+                                riêng đối với người dùng. Dựa vào hoàn cảnh, môi trường mà chúng ra sẽ sở hữu nước hoa
+                                lâu hay nhanh bay hương tức là nồng độ tinh dầu thơm nhiều hay ít.</p>
+
+                        </div>
+                        <div class="tab-pane" id="review" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+                            <h3>Top 3 chai nước hoa mùi hoa hồng thơm lâu</h3>
+                            <p>Nước hoa hương hoa hồng mang đến sức hút đặc biệt nhờ sự tinh tế, sang trọng và lãng mạn.
+                                Mùi hương này không chỉ tạo cảm giác cuốn hút, mà còn giúp thư giãn tinh thần, giảm căng
+                                thẳng. Với sự đa dạng trong sắc thái – từ nhẹ nhàng, thanh thoát đến nồng nàn, quyến rũ
+                                – nước hoa hương hoa hồng phù hợp với nhiều phong cách và đối tượng, kể cả nam giới khi
+                                kết hợp cùng gỗ hay xạ hương. Đây chính là lựa chọn lý tưởng cho những ai yêu thích sự
+                                thanh lịch và quyến rũ trong từng nốt hương.</p>
+                            <h4>Nước hoa mùi hoa hồng Memo Paris French Leather
+                            </h4>
+                            <div class="text-center mt-5">
+                                <img src="image/nuoc-hoa-memo-paris-french-leather.jpg" alt="">
+                            </div>
+                            <p>French Leather EDP của Memo Paris là một trong những chai nước hoa hương hoa hồng ấn
+                                tượng dành cho nam, với sự kết hợp hài hòa giữa mùi da thuộc dễ chịu và nốt hoa hồng đặc
+                                trưng. Hương thơm kéo dài từ 6-8 giờ với độ tỏa hương vừa phải, mang đến cảm giác tinh
+                                tế và sang trọng.</p>
+
+                            <h4>Nước hoa Parfums de Marly Delina EDP</h4>
+                            <div class="text-center mt-5">
+                                <img src="image/nuoc-hoa-parfums-de-marly-delina-edp-1.jpg" alt="">
+                            </div>
+                            <p>Parfums de Marly Delina EDP là hương hoa hồng sang trọng, nữ tính và cuốn hút. Mở đầu
+                                tươi mát với cam bergamot, quả vải, đại hoàng, sau đó chuyển sang hoa hồng Thổ Nhĩ Kỳ,
+                                mẫu đơn, hoa huệ đầy quyến rũ. Nốt cuối ấm áp với gỗ cashmere, xạ hương và vani, tạo nên
+                                dấu ấn gợi cảm, tinh tế. </p>
+                            <h4>Nước hoa Maison Francis Kurkdjian A La Rose</h4>
+                            <div class="text-center mt-5">
+                                <img src="image/nuoc-hoa-maison-francis-kurkdjian-a-la-rose.jpg" alt="">
+                            </div>
+                            <p>A La Rose tái hiện chân thực hương hoa hồng, như đưa bạn lạc vào khu vườn rực rỡ với
+                                những giống hồng quý từ Damascus, Thổ Nhĩ Kỳ và Bulgaria. Tuyến tính cùng chút xạ hương
+                                tinh tế, mùi hương mang đến cảm giác sang trọng, trẻ trung và đầy cuốn hút.</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container trending">
+        <div class="row">
+            <div class="col-lg-12 section-title pb-4 ">
+                <h1 style="text-align: center;">Sản phẩm tương tự</h1>
+            </div>
+            <div class="col-12 ">
+                <div class="owl-carousel owl-theme trending-list">
+                    <div class="pr-item">
+                        <div class="primg">
+                            <img src="image/product01.png" alt="" class="img-pr-1 w-100">
+                            <img src="image/product02.png" alt="" class="img-pr-2 w-100">
+                        </div>
+
+                        <h4 class="pr-name">Nước hoa hương hoa hồng</h4>
+                        <ul class="pr-rating">
+                            <li>
+                                <i class="fa-solid fa-star"></i>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-star"></i>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-star"></i>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-star"></i>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-star"></i>
+                            </li>
+                        </ul>
+                        <div class="pr-price d-flex">
+                            <p class="old-price">1.000.000 VND</p>
+                            <p class="new-price">600.000 VND</p>
+                        </div>
+                        <button class="btn-buynow"><a href="sanphamchitiet.html">Xem chi tiết</a></button>
+                    </div>
+
+                    <div class="pr-item">
+                        <div class="primg">
+                            <img src="image/product03.png" alt="" class="img-pr-1 w-100">
+                            <img src="image/product04.png" alt="" class="img-pr-2 w-100">
+                        </div>
+
+                        <h4 class="pr-name">Nước hoa hương hoa hồng</h4>
+                        <ul class="pr-rating">
+                            <li>
+                                <i class="fa-solid fa-star"></i>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-star"></i>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-star"></i>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-star"></i>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-star"></i>
+                            </li>
+                        </ul>
+                        <div class="pr-price d-flex">
+                            <p class="old-price">1.000.000 VND</p>
+                            <p class="new-price">600.000 VND</p>
+                        </div>
+                        <button class="btn-buynow"><a href="sanphamchitiet.html">Xem chi tiết</a></button>
+                    </div>
+
+                    <div class="pr-item">
+                        <div class="primg">
+                            <img src="image/product05.png" alt="" class="img-pr-1 w-100">
+                            <img src="image/product07.png" alt="" class="img-pr-2 w-100">
+                        </div>
+                        <h4 class="pr-name">Nước hoa hương hoa hồng</h4>
+                        <ul class="pr-rating">
+                            <li>
+                                <i class="fa-solid fa-star"></i>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-star"></i>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-star"></i>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-star"></i>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-star"></i>
+                            </li>
+                        </ul>
+                        <div class="pr-price d-flex">
+                            <p class="old-price">1.000.000 VND</p>
+                            <p class="new-price">600.000 VND</p>
+                        </div>
+                        <button class="btn-buynow">Xem chi tiết</button>
+                    </div>
+
+                    <div class="pr-item">
+                        <div class="primg">
+                            <img src="image/product08.png" alt="" class="img-pr-1 w-100">
+                            <img src="image/product01.png" alt="" class="img-pr-2 w-100">
+                        </div>
+                        <h4 class="pr-name">Nước hoa hương hoa hồng</h4>
+                        <ul class="pr-rating">
+                            <li>
+                                <i class="fa-solid fa-star"></i>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-star"></i>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-star"></i>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-star"></i>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-star"></i>
+                            </li>
+                        </ul>
+                        <div class="pr-price d-flex">
+                            <p class="old-price">1.000.000 VND</p>
+                            <p class="new-price">600.000 VND</p>
+                        </div>
+                        <button class="btn-buynow"><a href="sanphamchitiet.html">Xem chi tiết</a></button>
+                    </div>
+
+                    <div class="pr-item">
+                        <div class="primg">
+                            <img src="image/product06_grande.png" alt="" class="img-pr-1 w-100">
+                            <img src="image/product03.png" alt="" class="img-pr-2 w-100">
+                        </div>
+                        <h4 class="pr-name">Nước hoa hương hoa hồng</h4>
+                        <ul class="pr-rating">
+                            <li>
+                                <i class="fa-solid fa-star"></i>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-star"></i>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-star"></i>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-star"></i>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-star"></i>
+                            </li>
+                        </ul>
+                        <div class="pr-price d-flex">
+                            <p class="old-price">1.000.000 VND</p>
+                            <p class="new-price">600.000 VND</p>
+                        </div>
+                        <button class="btn-buynow"><a href="sanphamchitiet.html">Xem chi tiết</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bgfooter mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 company-info">
+                    <a href="index.html">
+                        <img src="image/fotter-logo.png" alt="" class="img-fluid">
+                    </a>
+                    <h5>Liên hệ với chúng tôi qua</h5>
+                    <div class="row">
+                        <div class="col-lg-1 col-2">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <div class="col-lg-11 col-10 p-0">
+                            <p>Trụ sở chính: Lorem ipsum dolor sit amet, elit.</p>
+                        </div>
+                        <div class="col-lg-1 col-2">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <div class="col-lg-11 col-10 p-0">
+                            <p>Hotline:<span> 19004449</span>- Điện thoại: <span> 02838328272</span></p>
+                        </div>
+                    </div>
+                    <h5>Nhập email của bạn để nhận thêm thông tin từ chúng tôi</h5>
+                    <form action="" class="sub-form">
+                        <div class="row">
+                            <div class="col-lg-8">
+                                <input type="text" placeholder="Nhập email">
+                            </div>
+                            <div class="col-lg-3">
+                                <button>
+                                    <i class="fa-solid fa-arrow-right-long"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="col-lg-8">
+                    <div class="row">
+
+                        <div class="col-lg-4 col-sm-6 col-md-4 about ">
+                            <h3 class="footer-title">Về chúng tôi</h3>
+                            <ul class="nav-footer">
+                                <li>
+                                    <a href="#">Giới thiệu</a>
+                                </li>
+                                <li>
+                                    <a href="#">Danh sách sản phẩm</a>
+                                </li>
+                                <li>
+                                    <a href="#">Khách hàng thân thiết</a>
+                                </li>
+                                <li>
+                                    <a href="#">Liên hệ</a>
+                                </li>
+                                <li>
+                                    <a href="#">Địa chỉ</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="col-lg-4 col-sm-6 col-md-4 about ">
+                            <h3 class="footer-title">Về chính sách</h3>
+                            <ul class="nav-footer">
+                                <li>
+                                    <a href="#">Chính sách và quy định chungu</a>
+                                </li>
+                                <li>
+                                    <a href="#">Quy định - hình thức thanh toán</a>
+                                </li>
+                                <li>
+                                    <a href="#">Chính sách vận chuyển</a>
+                                </li>
+                                <li>
+                                    <a href="#">Chính sách đổi trả hàng</a>
+                                </li>
+                                <li>
+                                    <a href="#">Hướng dẫn mua hàng</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="col-lg-4 col-md-4 follow">
+                            <h3 class="footer-title">Theo dõi chúng tôi tại</h3>
+                            <ul class="social">
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-brands fa-facebook-f"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-brands fa-tiktok"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-brands fa-instagram"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-brands fa-youtube"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-brands fa-twitter"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/owl.carousel.js"></script>
+    <script src="js/price_range_script.js"></script>
+    <script src="js/path-to-easyzoom.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+        function makeTimer(endTime) {
+            endTime = (Date.parse(endTime) / 1000);
+
+            var now = new Date();
+            now = (Date.parse(now) / 1000);
+
+            var timeLeft = endTime - now;
+
+            var days = Math.floor(timeLeft / 86400);
+            var hours = Math.floor((timeLeft - (days * 86400)) / 3600);
+            var minutes = Math.floor((timeLeft - (days * 86400) - (hours * 3600)) / 60);
+            var seconds = Math.floor((timeLeft - (days * 86400) - (hours * 3600) - (minutes * 60)));
+
+            if (hours < "10") { hours = "0" + hours; }
+            if (minutes < "10") { minutes = "0" + minutes; }
+            if (seconds < "10") { seconds = "0" + seconds; }
+
+            $(".days").html(days + "<span>Ngày</span>");
+            $(".hours").html(hours + "<span>Giờ</span>");
+            $(".minutes").html(minutes + "<span>Phút</span>");
+            $(".seconds").html(seconds + "<span>Giây</span>");
+        }
+        var timer2 = $('#timer2');
+        timer2.interval = setInterval(function () {
+            makeTimer('4 April 2025 23:59:59 GMT+07:00');
+        }, 1000);
+    </script>
+</body>
+
+</html>
